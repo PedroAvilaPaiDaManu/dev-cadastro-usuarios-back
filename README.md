@@ -24,7 +24,7 @@ Método: POST
 URL: http://localhost:8000/users/
 Payload:
 
-
+```
 {
     "email": "exemplo@email.com",
     "name": "Nome",
@@ -35,6 +35,8 @@ Payload:
     "city": "Manaus",
     "age": 25
 }
+
+```
 
 Descrição: Cria um novo usuário com as informações fornecidas no payload. Retorna uma resposta JSON indicando se o cadastro foi realizado com sucesso ou não.
 
@@ -53,6 +55,7 @@ URL: http://localhost:8000/users_edit/
 Headers: O email do usuário a ser atualizado deve ser fornecido no header "email".
 Payload (apenas os campos que serão atualizados):
 
+```
 {
     "email": "exemplo@email.com",
     "name": "Nome",
@@ -63,6 +66,7 @@ Payload (apenas os campos que serão atualizados):
     "city": "Manaus",
     "age": 25
 }
+```
 
 Descrição: Atualiza as informações do usuário com o email fornecido no header "email". Retorna uma resposta JSON indicando se a atualização foi realizada com sucesso ou não.
 
