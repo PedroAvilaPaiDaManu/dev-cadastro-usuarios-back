@@ -1,13 +1,13 @@
-Descrição do Projeto:
+# Descrição do Projeto:
 O projeto é uma API RESTful desenvolvida em Python usando o framework FastAPI e o banco de dados Microsoft SQL Server. A API permite realizar operações CRUD (Create, Read, Update, Delete) em uma tabela de usuários, armazenando informações como email, nome, sobrenome, telefone, UF, CEP, cidade e idade.
 
-Requisitos:
+## Requisitos:
 
 Python 3.7 ou superior
 Microsoft SQL Server (ou SQL Server Express) instalado e configurado
 ODBC driver para SQL Server (se estiver usando um sistema operacional Windows)
 
-Configure a conexão com o banco de dados:
+## Configure a conexão com o banco de dados:
 
 Abra o arquivo "postgres_conn.py" na pasta raiz do projeto.
 Edite as variáveis "server", "database", "username" e "password" para refletir as informações de conexão com o seu banco de dados SQL Server.
@@ -18,7 +18,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 A API estará disponível em http://localhost:8000/.
 Endpoints:
 
-Criar Usuário:
+## Criar Usuário:
 
 Método: POST
 URL: http://localhost:8000/users/
@@ -37,7 +37,7 @@ Payload:
 }
 
 ```
-
+## Retorno caso o usúario seja menor que 18 anos
 ![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/b8da0eb9-3298-4a17-ac1a-f30f35b57372)
 
 
