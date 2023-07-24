@@ -38,6 +38,9 @@ Payload:
 
 ```
 
+![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/b8da0eb9-3298-4a17-ac1a-f30f35b57372)
+
+
 Descrição: Cria um novo usuário com as informações fornecidas no payload. Retorna uma resposta JSON indicando se o cadastro foi realizado com sucesso ou não.
 
 
