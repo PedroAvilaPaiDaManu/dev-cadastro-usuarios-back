@@ -1,0 +1,6 @@
+fastapi==0.98.0
+pandas==2.0.2
+psycopg2-binary==2.9.6
+requests==2.31.0
+uvicorn==0.22.0
+pyodbc==4.0.39
