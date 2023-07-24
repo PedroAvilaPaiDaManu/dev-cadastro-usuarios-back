@@ -37,21 +37,19 @@ Payload:
 }
 
 ```
-## Retorno caso o usúario seja menor que 18 anos
-![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/b8da0eb9-3298-4a17-ac1a-f30f35b57372)
 
 
 Descrição: Cria um novo usuário com as informações fornecidas no payload. Retorna uma resposta JSON indicando se o cadastro foi realizado com sucesso ou não.
 
 
-Listar Usuários:
+## Listar Usuários:
 
 Método: GET
 URL: http://localhost:8000/users/
 Descrição: Retorna uma lista de todos os usuários cadastrados no banco de dados. Se não houver usuários cadastrados, retorna uma resposta JSON indicando que nenhum usuário foi encontrado.
 
 
-Atualizar Usuário:
+## Atualizar Usuário:
 
 Método: PUT
 URL: http://localhost:8000/users_edit/
@@ -71,14 +69,26 @@ Payload (apenas os campos que serão atualizados):
 }
 ```
 
-Descrição: Atualiza as informações do usuário com o email fornecido no header "email". Retorna uma resposta JSON indicando se a atualização foi realizada com sucesso ou não.
+## Descrição: 
+Atualiza as informações do usuário com o email fornecido no header "email". Retorna uma resposta JSON indicando se a atualização foi realizada com sucesso ou não.
 
-Observações:
+## Validações:
 
 A API realiza validações para garantir que o cadastro seja autorizado apenas para o estado do Amazonas (UF: AM) e para maiores de 18 anos.
-Certifique-se de que as configurações do banco de dados (server, database, username, password) estejam corretas no arquivo "postgres_conn.py".
+
+![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/b8da0eb9-3298-4a17-ac1a-f30f35b57372)
+
+![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/7be9a09a-0558-46e7-bc2c-5dba6b5b8e11)
+
 O arquivo "requirements.txt" contém todas as dependências necessárias para executar a aplicação. Certifique-se de que as dependências foram instaladas corretamente usando o comando "pip install -r requirements.txt".
-Para a execução em um ambiente Windows, é necessário garantir que o ODBC driver para SQL Server esteja instalado e configurado corretamente. Caso contrário, a conexão com o banco de dados pode falhar.
+
 O código do projeto está organizado em três arquivos principais: "main.py" para as rotas e lógica da aplicação, "postgres_conn.py" para a conexão com o banco de dados, e "models.py" para a definição do modelo de dados do usuário.
+
+![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/8d88426d-3359-4653-864c-08b76b659925)
+
 Certifique-se de executar o comando "uvicorn" usando o parâmetro "--host 0.0.0.0" para que a API seja acessível a partir de outros dispositivos na rede local (se necessário). Caso contrário, a API estará disponível apenas em localhost.
+
 Lembre-se de que a API precisa ser executada juntamente com um banco de dados SQL Server configurado corretamente para armazenar as informações dos usuários.
+
+![image](https://github.com/PedroAvilaPaiDaManu/dev-cadastro-usuarios-back/assets/121688647/8c48354c-b628-4cb5-b5c1-32058d4d878e)
+
