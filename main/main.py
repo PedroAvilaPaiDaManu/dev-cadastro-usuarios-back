@@ -13,8 +13,7 @@ async def create_user(user: User):
     try:
         uf = await get_cep_data(user.cep)
 
-        print(uf)
-
+        
         if uf[0] != 'AM':
             response = {
                 "FL_STATUS": False,
